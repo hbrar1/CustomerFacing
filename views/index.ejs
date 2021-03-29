@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%-include ("./partials/head"); %>
+    </head>
+    <body>
+        <%-include ("./partials/header"); %>
+
+        <div><% include ("./partials/news"); %></div>
+        <div id="mainNews" class="container mainNews">
+            <div class="card">
+                <img id="mainNewsImg" src="" class="card-img-top">
+                <div class="card-body">
+                    <h5 id="mainNewsTitle" class="card-title"></h5>
+                    <p id="mainNewsDescription" class="card-text"></p>
+                </div>
+                <div class="card-body">
+                    <a id="mainNewsLink" href="#" class="card-link" target="_blank">View article</a>
+                </div>
+            </div>                
+        </div>
+            <footer>
+                <div><%- include ("./partials/footer"); %></div>
+            </footer>
+
+    </body>
+</html>
